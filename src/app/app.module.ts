@@ -4,10 +4,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { TelaDeInteracaoComponent } from './apresentacao/tela-de-interacao/tela-de-interacao.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TelaDeInteracaoComponent
   ],
   imports: [
     BrowserModule,

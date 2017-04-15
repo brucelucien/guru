@@ -1,18 +1,21 @@
 import { TestBed, async } from '@angular/core/testing';
-
-import { AppComponent } from './app.component';
 import { FormsModule, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { AppComponent } from './app.component';
+import { TelaDeInteracaoComponent } from '../app/apresentacao/tela-de-interacao/tela-de-interacao.component';
+
 describe('AppComponent', () => {
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        ReactiveFormsModule,
-        FormsModule
+        FormsModule,
+        ReactiveFormsModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        TelaDeInteracaoComponent
       ]
     }).compileComponents();
   }));

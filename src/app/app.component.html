@@ -8,38 +8,6 @@
   </div>
 </nav>
 <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <img src="/assets/wisdom.jpg" alt="Sabedoria" class="img-responsive center-block">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <form [formGroup]="guruForm" novalidate>
-        <div class="form-group">
-          <label for="perguntaDoUsuario">Pergunta</label>
-          <input
-            type="text"
-            class="form-control"
-            id="perguntaDoUsuario"
-            placeholder="O que te aflige?"
-            formControlName="perguntaDoUsuario"
-            (keydown)="onKeyDownPerguntaDoUsuario($event)">
-        </div>
-        <div class="form-group">
-          <button class="center-block">Guru, me ajude!</button>
-        </div>
-        <div class="form-group">
-          <label for="respostaDoGuru">Resposta</label>
-          <input
-            type="text"
-            class="form-control"
-            id="respostaDoGuru"
-            placeholder="Aqui a sabedoria do Guru será apreciada."
-            formControlName="respostaDoGuru">
-        </div>
-        <hr>
-      </form>
-    </div>
-  </div>
+  <guru-tela-de-interacao></guru-tela-de-interacao>
 </div>
+
